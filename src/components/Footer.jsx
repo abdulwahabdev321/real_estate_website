@@ -26,9 +26,9 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block mb-6">
               <img
-                src="/Logo.svg"
+                src="/logomain.jpeg"
                 alt="Preview Estates Logo"
-                className="h-14 w-auto object-contain bg-white p-2 rounded-lg"
+                className="h-10 w-auto object-contain bg-white p-2 rounded-lg"
               />
             </Link>
 
@@ -36,26 +36,6 @@ export default function Footer() {
               Your trusted partner for property lettings, management, and sales
               in Leytonstone, London. We make finding your perfect home simple.
             </p>
-
-            {/* Social Links */}
-            <div className="flex gap-4">
-              {["Facebook", "Twitter", "Instagram", "LinkedIn"].map((social) => (
-                <a
-                  key={social}
-                  href="#"
-                  className="w-10 h-10 rounded-full bg-[#1E293B] flex items-center justify-center hover:bg-[#DC2626] transition-colors"
-                  aria-label={social}
-                >
-                  <svg
-                    className="w-5 h-5"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <circle cx="12" cy="12" r="10" />
-                  </svg>
-                </a>
-              ))}
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -261,3 +241,4 @@ export default function Footer() {
     </footer>
   );
 }
+
