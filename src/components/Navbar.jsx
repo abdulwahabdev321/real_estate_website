@@ -1,4 +1,4 @@
-"use client";
+ "use client";
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
@@ -32,26 +32,26 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "navbar-glass shadow-lg py-2"
+          ? "navbar-glass shadow-lg py-4"
           : "bg-white/90 backdrop-blur-sm py-4"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 hover-scale">
-            <Image
-              src="/logo.jpeg"
-              alt="Preview Estates Logo"
-              width={180}
-              height={60}
-              className="h-12 sm:h-14 w-auto object-contain"
-              priority
-            />
+           <Image
+  src="/Logo.svg"
+  alt="Preview Estates Logo"
+  width={180}
+  height={60}
+  className="h-12 sm:h-14 lg:h-16 w-auto object-contain"
+/>
+
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-1">
+          <nav className="hidden xl:flex items-center gap-1">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
@@ -68,7 +68,7 @@ export default function Navbar() {
           </nav>
 
           {/* CTA Button - Desktop */}
-          <div className="hidden lg:flex items-center gap-4">
+          <div className="hidden xl:flex items-center gap-4">
             <a
               href="tel:02085564171"
               className="flex items-center gap-2 text-gray-700 hover:text-red-600 transition-colors"
@@ -86,7 +86,7 @@ export default function Navbar() {
                   d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                 />
               </svg>
-              <span className="font-semibold">020 8556 4171</span>
+              <span className="font-semibold">020 3488 6585</span>
             </a>
             <Link href="/contact" className="btn-primary text-sm">
               Get in Touch
@@ -96,7 +96,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            className="xl:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
             aria-label="Toggle menu"
           >
             <svg
@@ -126,14 +126,14 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden mobile-menu-enter">
+          <div className="xl:hidden mobile-menu-enter">
             <nav className="py-4 space-y-1">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`block px-4 py-3 rounded-lg font-medium transition-all duration-300 ${
+                  className={`block px-3 sm:px-4 py-3 rounded-lg font-medium transition-all duration-300 text-sm sm:text-base ${
                     pathname === link.href
                       ? "text-red-600 bg-red-50"
                       : "text-gray-700 hover:text-red-600 hover:bg-red-50/50"
@@ -142,7 +142,7 @@ export default function Navbar() {
                   {link.name}
                 </Link>
               ))}
-              <div className="pt-4 px-4 space-y-3">
+              <div className="pt-4 px-3 sm:px-4 space-y-3">
                 <a
                   href="tel:02085564171"
                   className="flex items-center gap-2 text-gray-700"
@@ -160,12 +160,12 @@ export default function Navbar() {
                       d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                     />
                   </svg>
-                  <span className="font-semibold">020 8556 4171</span>
+                  <span className="font-semibold">020 3488 6585</span>
                 </a>
                 <Link
                   href="/contact"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="btn-primary text-sm block text-center"
+                  className="btn-primary text-sm sm:text-base block text-center"
                 >
                   Get in Touch
                 </Link>

@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
         className={`${poppins.variable} ${inter.variable} antialiased font-[family-name:var(--font-poppins)]`}
       >
         <Navbar />
-        <main className="min-h-screen">
+        <main className="min-h-screen overflow-x-hidden">
           {children}
         </main>
         <Footer />

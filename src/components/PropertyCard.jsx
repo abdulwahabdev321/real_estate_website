@@ -19,11 +19,11 @@ export default function PropertyCard({ property, index = 0 }) {
 
   return (
     <div
-      className={`card hover-lift opacity-0 animate-fade-in`}
+      className={`card hover-lift opacity-0 animate-fade-in w-full overflow-hidden`}
       style={{ animationDelay: `${index * 0.1}s`, animationFillMode: "forwards" }}
     >
       {/* Image Container */}
-      <div className="relative h-56 overflow-hidden group">
+      <div className="relative h-48 sm:h-56 overflow-hidden group">
         <Image
           src={image || "/api/placeholder/400/300"}
           alt={title}
@@ -68,48 +68,48 @@ export default function PropertyCard({ property, index = 0 }) {
       </div>
 
       {/* Content */}
-      <div className="p-5">
+      <div className="p-4 sm:p-5">
         {/* Price */}
         <div className="flex items-baseline gap-1 mb-2">
-          <span className="text-2xl font-bold text-red-600">£{price.toLocaleString()}</span>
-          {status === "For Rent" && <span className="text-gray-500 text-sm">/month</span>}
+          <span className="text-xl sm:text-2xl font-bold text-red-600">£{price.toLocaleString()}</span>
+          {status === "For Rent" && <span className="text-gray-500 text-xs sm:text-sm">/month</span>}
         </div>
 
         {/* Title */}
-        <h3 className="font-semibold text-lg text-gray-900 mb-2 line-clamp-1">
+        <h3 className="font-semibold text-base sm:text-lg text-gray-900 mb-2 line-clamp-2 break-words">
           {title}
         </h3>
 
         {/* Location */}
-        <div className="flex items-center gap-1 text-gray-500 text-sm mb-4">
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div className="flex items-center gap-1 text-gray-500 text-xs sm:text-sm mb-4">
+          <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
           </svg>
-          <span className="line-clamp-1">{location}</span>
+          <span className="line-clamp-1 break-words">{location}</span>
         </div>
 
         {/* Divider */}
         <div className="border-t border-gray-100 pt-4">
           {/* Features */}
-          <div className="flex items-center justify-between text-sm text-gray-600">
+          <div className="flex items-center justify-between text-xs sm:text-sm text-gray-600">
             <div className="flex items-center gap-1">
-              <svg className="w-4 h-4 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-3 h-3 sm:w-4 sm:h-4 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
               </svg>
-              <span>{bedrooms} Beds</span>
+              <span className="text-xs sm:text-sm">{bedrooms} Beds</span>
             </div>
             <div className="flex items-center gap-1">
-              <svg className="w-4 h-4 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-3 h-3 sm:w-4 sm:h-4 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
               </svg>
-              <span>{bathrooms} Baths</span>
+              <span className="text-xs sm:text-sm">{bathrooms} Baths</span>
             </div>
             <div className="flex items-center gap-1">
-              <svg className="w-4 h-4 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-3 h-3 sm:w-4 sm:h-4 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
               </svg>
-              <span>{sqft} sq ft</span>
+              <span className="text-xs sm:text-sm">{sqft} sq ft</span>
             </div>
           </div>
         </div>
@@ -117,7 +117,7 @@ export default function PropertyCard({ property, index = 0 }) {
         {/* View Details Button */}
         <Link
           href={`/property/${id}`}
-          className="mt-4 block w-full py-3 text-center bg-gray-100 text-gray-800 font-medium rounded-lg hover:bg-red-600 hover:text-white transition-colors"
+          className="mt-4 block w-full py-2 sm:py-3 text-center bg-gray-100 text-gray-800 font-medium rounded-lg hover:bg-red-600 hover:text-white transition-colors text-sm sm:text-base"
         >
           View Details
         </Link>

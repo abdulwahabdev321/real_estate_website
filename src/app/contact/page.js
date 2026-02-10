@@ -22,8 +22,8 @@ const contactInfo = [
       </svg>
     ),
     title: "Call Us",
-    details: ["020 8556 4171"],
-    link: "tel:02085564171",
+    details: ["020 3488 6585", "074 4749 5999"],
+    link: "tel:02034886585",
     linkText: "Call Now",
   },
   {
@@ -33,9 +33,20 @@ const contactInfo = [
       </svg>
     ),
     title: "Email Us",
-    details: ["info@previewestates.co.uk"],
-    link: "mailto:info@previewestates.co.uk",
+    details: ["previewestates@gmail.com"],
+    link: "mailto:previewestates@gmail.com",
     linkText: "Send Email",
+  },
+  {
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+      </svg>
+    ),
+    title: "Website",
+    details: ["www.previewestates.co.uk"],
+    link: "https://www.previewestates.co.uk",
+    linkText: "Visit Website",
   },
   {
     icon: (
@@ -86,7 +97,7 @@ export default function ContactPage() {
       {/* Contact Info Cards */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
             {contactInfo.map((info, index) => (
               <div
                 key={index}
@@ -279,16 +290,16 @@ export default function ContactPage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in delay-200">
             <a
-              href="tel:02085564171"
+              href="tel:02034886585"
               className="btn-primary flex items-center gap-2"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-              Call 020 8556 4171
+              Call 020 3488 6585
             </a>
             <a
-              href="mailto:info@previewestates.co.uk"
+              href="mailto:previewestates@gmail.com"
               className="px-8 py-4 bg-transparent text-white font-semibold rounded-lg border-2 border-white hover:bg-white hover:text-gray-900 transition-colors flex items-center gap-2"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
