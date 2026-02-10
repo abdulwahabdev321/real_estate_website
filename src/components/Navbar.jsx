@@ -1,4 +1,4 @@
- "use client";
+"use client";
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
@@ -40,14 +40,13 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 hover-scale">
-           <Image
-  src="/Logo.svg"
-  alt="Preview Estates Logo"
-  width={180}
-  height={60}
-  className="h-12 sm:h-14 lg:h-16 w-auto object-contain"
-/>
-
+            <Image
+              src="/logomain.jpeg"
+              alt="Preview Estates Logo"
+              width={100}
+              height={60}
+              className="h-12 sm:h-14 lg:h-16 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -56,7 +55,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`px-4 py-2 rounded-lg font-medium text-sm transition-all duration-300 ${
+                className={`px-4 py-2 rounded-lg font-medium text-lg transition-all duration-300 ${
                   pathname === link.href
                     ? "text-red-600 bg-red-50"
                     : "text-gray-700 hover:text-red-600 hover:bg-red-50/50"
