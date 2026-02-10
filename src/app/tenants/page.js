@@ -5,57 +5,123 @@ import Link from "next/link";
 const tenantServices = [
   {
     icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+      <svg
+        className="w-8 h-8"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+        />
       </svg>
     ),
     title: "Property Search",
-    description: "We help you find the perfect rental property that matches your requirements and budget.",
+    description:
+      "We help you find the perfect rental property that matches your requirements and budget.",
   },
   {
     icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+      <svg
+        className="w-8 h-8"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+        />
       </svg>
     ),
     title: "Viewing Arrangements",
-    description: "Flexible viewing times arranged to suit your schedule, including evenings and weekends.",
+    description:
+      "Flexible viewing times arranged to suit your schedule, including evenings and weekends.",
   },
   {
     icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+      <svg
+        className="w-8 h-8"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+        />
       </svg>
     ),
     title: "Application Support",
-    description: "Clear guidance through the application process with quick turnaround times.",
+    description:
+      "Clear guidance through the application process with quick turnaround times.",
   },
   {
     icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+      <svg
+        className="w-8 h-8"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+        />
       </svg>
     ),
     title: "Maintenance Requests",
-    description: "Easy-to-report maintenance issues with prompt response from our dedicated team.",
+    description:
+      "Easy-to-report maintenance issues with prompt response from our dedicated team.",
   },
   {
     icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      <svg
+        className="w-8 h-8"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+        />
       </svg>
     ),
     title: "Deposit Protection",
-    description: "Your deposit is protected in a government-approved tenancy deposit scheme.",
+    description:
+      "Your deposit is protected in a government-approved tenancy deposit scheme.",
   },
   {
     icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+      <svg
+        className="w-8 h-8"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
+        />
       </svg>
     ),
     title: "24/7 Emergency Support",
-    description: "Round-the-clock support for genuine emergencies to give you peace of mind.",
+    description:
+      "Round-the-clock support for genuine emergencies to give you peace of mind.",
   },
 ];
 
@@ -121,13 +187,20 @@ export default function TenantsPage() {
               <div
                 key={index}
                 className="p-8 rounded-xl bg-gray-50 hover:bg-gray-100 transition-all duration-300 hover:shadow-lg opacity-0 animate-fade-in"
-                style={{ animationDelay: `${index * 0.1}s`, animationFillMode: "forwards" }}
+                style={{
+                  animationDelay: `${index * 0.1}s`,
+                  animationFillMode: "forwards",
+                }}
               >
                 <div className="w-16 h-16 rounded-2xl bg-gray-100 flex items-center justify-center text-gray-900 mb-6">
                   {service.icon}
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{service.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{service.description}</p>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  {service.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {service.description}
+                </p>
               </div>
             ))}
           </div>
@@ -155,8 +228,18 @@ export default function TenantsPage() {
                   description:
                     "Explore our available properties online or tell us your requirements and we'll match you with suitable homes.",
                   icon: (
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    <svg
+                      className="w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                      />
                     </svg>
                   ),
                 },
@@ -166,9 +249,24 @@ export default function TenantsPage() {
                   description:
                     "Book viewings at times that work for you. We offer flexible slots including evenings and weekends.",
                   icon: (
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                    <svg
+                      className="w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                      />
                     </svg>
                   ),
                 },
@@ -178,8 +276,18 @@ export default function TenantsPage() {
                   description:
                     "Submit your application with required documents. We'll process references and keep you informed.",
                   icon: (
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    <svg
+                      className="w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                      />
                     </svg>
                   ),
                 },
@@ -189,8 +297,18 @@ export default function TenantsPage() {
                   description:
                     "Review and sign your tenancy agreement, pay your deposit and first month's rent securely.",
                   icon: (
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                    <svg
+                      className="w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"
+                      />
                     </svg>
                   ),
                 },
@@ -200,8 +318,18 @@ export default function TenantsPage() {
                   description:
                     "Collect your keys and start enjoying your new home! We're here if you need anything.",
                   icon: (
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    <svg
+                      className="w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                      />
                     </svg>
                   ),
                 },
@@ -211,16 +339,25 @@ export default function TenantsPage() {
                   className={`relative flex flex-col md:flex-row items-center gap-8 opacity-0 animate-fade-in ${
                     index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
                   }`}
-                  style={{ animationDelay: `${index * 0.15}s`, animationFillMode: "forwards" }}
+                  style={{
+                    animationDelay: `${index * 0.15}s`,
+                    animationFillMode: "forwards",
+                  }}
                 >
-                  <div className={`flex-1 ${index % 2 === 0 ? "md:text-right" : "md:text-left"}`}>
-                    <div className={`bg-white p-8 rounded-xl shadow-lg ${index % 2 === 0 ? "md:mr-8" : "md:ml-8"}`}>
-                      <h3 className="text-xl font-semibold text-gray-900 mb-3">{item.title}</h3>
+                  <div
+                    className={`flex-1 ${index % 2 === 0 ? "md:text-right" : "md:text-left"}`}
+                  >
+                    <div
+                      className={`bg-white p-8 rounded-xl shadow-lg ${index % 2 === 0 ? "md:mr-8" : "md:ml-8"}`}
+                    >
+                      <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                        {item.title}
+                      </h3>
                       <p className="text-gray-600">{item.description}</p>
                     </div>
                   </div>
 
-                  <div className="relative z-10 w-14 h-14 rounded-full bg-blue-600 text-white flex items-center justify-center shadow-lg">
+                  <div className="relative z-10 w-14 h-14 rounded-full bg-[#dc2626] text-white flex items-center justify-center shadow-lg">
                     {item.icon}
                   </div>
 
@@ -246,13 +383,28 @@ export default function TenantsPage() {
               <details
                 key={index}
                 className="group bg-gray-50 rounded-xl overflow-hidden opacity-0 animate-fade-in"
-                style={{ animationDelay: `${index * 0.1}s`, animationFillMode: "forwards" }}
+                style={{
+                  animationDelay: `${index * 0.1}s`,
+                  animationFillMode: "forwards",
+                }}
               >
                 <summary className="flex items-center justify-between p-6 cursor-pointer list-none">
-                  <h3 className="font-semibold text-gray-900 pr-4">{faq.question}</h3>
+                  <h3 className="font-semibold text-gray-900 pr-4">
+                    {faq.question}
+                  </h3>
                   <span className="flex-shrink-0 w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-900 group-open:rotate-45 transition-transform">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                    <svg
+                      className="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 4v16m8-8H4"
+                      />
                     </svg>
                   </span>
                 </summary>
@@ -279,9 +431,9 @@ export default function TenantsPage() {
               </h2>
 
               <p className="text-gray-400 mb-8 leading-relaxed">
-                Our online tenant portal makes managing your tenancy easy. Pay rent, report
-                maintenance issues, access important documents, and communicate with our
-                team - all from one convenient place.
+                Our online tenant portal makes managing your tenancy easy. Pay
+                rent, report maintenance issues, access important documents, and
+                communicate with our team - all from one convenient place.
               </p>
 
               <ul className="space-y-3 mb-8">
@@ -291,9 +443,22 @@ export default function TenantsPage() {
                   "Access tenancy documents 24/7",
                   "Communicate directly with our team",
                 ].map((item, index) => (
-                  <li key={index} className="flex items-center gap-3 text-gray-300">
-                    <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  <li
+                    key={index}
+                    className="flex items-center gap-3 text-gray-300"
+                  >
+                    <svg
+                      className="w-5 h-5 text-gray-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
                     </svg>
                     {item}
                   </li>
@@ -308,12 +473,24 @@ export default function TenantsPage() {
             <div className="animate-fade-in-right">
               <div className="bg-gray-800 rounded-2xl p-8 text-center">
                 <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gray-600/20 flex items-center justify-center">
-                  <svg className="w-10 h-10 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                  <svg
+                    className="w-10 h-10 text-gray-500"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                    />
                   </svg>
                 </div>
 
-                <h3 className="text-xl font-semibold text-white mb-4">Already a tenant?</h3>
+                <h3 className="text-xl font-semibold text-white mb-4">
+                  Already a tenant?
+                </h3>
                 <p className="text-gray-400 mb-6">
                   Log in to your account to manage your tenancy.
                 </p>
